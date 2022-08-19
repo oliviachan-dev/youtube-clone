@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <!-- grid-template-columns: [first col] [second col]-->
+        <!-- div is display block by default, but if inside grid, it will take up size of col
+        it also does not have alignment issues that display: inline-block has-->
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px;
+            "> 
+            <div style="background-color:
+            lightblue;">div 1</div>
+            <div style="background-color:
+            lightpink;">div 2<p>text</p></div>
+        </div>
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 100px 200px;
+            "> 
+            <div style="background-color:
+            lightblue;">100px</div>
+            <div style="background-color:
+            lightpink;">100px<p>text</p></div>
+            <div style="background-color:
+            lightblue;">200px</div>
+            <div style="background-color:
+            lightpink;">100px</div>
+            <!--notice how 4th div wraps to next line, this is because we
+            only defined 3 columns in grid-template-columns-->
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            "> 
+            <!-- "fr" means free space, 
+            take up remaining space on grid-->
+            <div style="background-color:
+            lightblue;">100px</div>
+            <div style="background-color:
+            lightpink;">1fr</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 1fr 2fr;
+        "> 
+        <!-- 2fr takes up twice amount of
+        remaining space as 1fr.
+        Think of this as a ratio. 1fr takes 1/3 of remaining space
+        2fr takes 2/3 of remaining space-->
+        <div style="background-color:
+        lightblue;">100px</div>
+        <div style="background-color:
+        lightpink;">1fr</div>
+        <div style="background-color:
+        lightblue;">2fr</div>
+    </div>
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px; 
+    "> 
+        <!-- 2fr takes up twice amount of
+        remaining space as 1fr.
+        Think of this as a ratio. 1fr takes 1/3 of remaining space
+        2fr takes 2/3 of remaining space-->
+        <div style="background-color:
+        lightblue; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightpink; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightblue; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightpink; height: 200px;">1fr</div>
+        <div style="background-color:
+        lightblue; height: 200px;">1fr</div>
+         <div style="background-color:
+         lightpink; height: 200px;">1fr</div>
+        
+    </div>
+    </body>
+</html>
