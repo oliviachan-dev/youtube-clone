@@ -1,0 +1,22 @@
+.ex11a {
+    display: grid;
+    grid-template-columns: 200px 75px;
+    margin-bottom: 50px;
+}
+.px200, .col1, .col3 {
+    background-color: cornflowerblue;
+}
+.px75, .col2, .col4 {
+    background-color: darkseagreen;
+}
+.ex11b {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+    margin-bottom: 50px;
+}
+.ex11c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
