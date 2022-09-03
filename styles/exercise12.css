@@ -1,0 +1,173 @@
+.ex12a {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.px200, .item1, .item3 {
+    background-color: cornflowerblue;
+    width: 200px;
+}
+.px75 , .item2, .item1c, .item2c, .item3c, .item4c {
+    background-color: darkseagreen;
+    width: 75px;
+}
+.ex12b {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.item1 {
+    width: 50px;
+}
+.item2 {
+    flex: 1; 
+}
+.item3 {
+    width: 75px; 
+}
+.ex12c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.ex12d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    margin-bottom: 50px;
+}
+.item1d, .item2d {
+    background-color: cornflowerblue;
+}
+.box12e {
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(186, 185, 185);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.flexbox {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 8px;
+   font-family: Roboto;
+   font-size: 15px;
+}
+.num {
+    background-color:rgb(64, 123, 233);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 300;
+}
+p {
+    font-family: Roboto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.suggestFollow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.instagramPicture {
+    height: 50px;
+    width: 50px; 
+    border-radius: 25px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.followDescription {
+    width: 200px;
+}
+.profileName {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.nickname, .profileAttribute {
+    margin-bottom: 3px;
+    color:rgb(136, 134, 134);
+}
+.profileAttribute {
+    font-size: 12px;;
+}
+.follow {
+    border: none;
+    background-color: hsl(215, 90%, 62%);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.12s;
+}
+.follow:hover {
+    background-color:  hsl(215, 90%, 70%);;
+}
+.instagramBox {
+    margin-bottom: 50px;
+}
+.navigationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: mediumpurple;
+    height: 50px;
+
+}
+.leftSide {
+    width: 100px;
+    margin-left: 5px;
+}
+.rightSide {
+    width: 100px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.downloadButton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.homeButton {
+    border: none;
+    background-color: mediumpurple;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.downloadButton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 2px;
+    background-color: mediumpurple;
+    color: white;   
+}
+.middle {
+    flex: 1;
+    max-width: 1000px;
+}
+.search {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 300px;
+    border: none;
+    border-radius: 20px;
+}
